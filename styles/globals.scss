@@ -1,0 +1,317 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'loaders.css/src/animations/ball-scale-ripple-multiple.scss';
+
+body {
+	background: linear-gradient(to right, #f2994a, #f2c94c);
+}
+
+@font-face {
+	font-family: 'Helvetica Neue';
+	src: url('../public/fonts/helvetica-neu.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'La Belle Aurore';
+	src: url('../public/fonts/LaBelleAurore.woff2'), 
+	url('../public/fonts/LaBelleAurore.woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Coolvetica';
+	src: url('../public/fonts/CoolveticaRg-Regular.woff2'),
+	url('../public/fonts/CoolveticaRg-Regular.woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// global classes
+
+// Sidebar
+.sidebar {
+	background: linear-gradient(to right, #000000, #434343);
+}
+
+.ball-scale-ripple-multiple > div {
+	background: black;
+	height: 90px;
+	width: 90px
+}
+
+.loader-inner {
+	transform: translate(40px);
+}
+
+.loader-active {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	width: 50px;
+	height: 50px;
+}
+
+.hide-icon {
+	position: relative;
+
+	&:hover {
+		svg {
+			opacity: 0;
+		}
+
+		&:after {
+			opacity: 1;
+		}
+	}
+
+	&:after {
+		content: "";
+		color: #f2c94c;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+		opacity: 0;
+	}
+}
+
+.home-icon {
+	&:after {
+		content: "HOME";
+	}
+}
+.about-icon {
+	&:after {
+		content: "ABOUT";
+	}
+}
+.skills-icon {
+	&:after {
+		content: "SKILLS";
+	}
+}
+.projects-icon {
+	&:after {
+		content: "PROJECTS";
+	}
+}
+.contact-icon {
+	&:after {
+		content: "CONTACT";
+	}
+}
+
+// Animated Text
+h1 {
+	color: #14213d;
+	font-size: clamp(28px, 16px + 2vw, 56px);
+	line-height: clamp(24px, 16px + 2vw, 53px);
+	letter-spacing: 8px;
+	margin: 0;
+	font-family: 'Coolvetica';
+	font-weight: 400;
+
+	&:before {
+		content: '';
+		font-family: 'La Belle Aurore', cursive;
+		color: #ffd700;
+		font-size: 18px;
+		opacity: 0.6;
+	}
+
+	&:after {
+		content: '';
+		font-family: 'La Belle Aurore', cursive;
+		color: #ffd700;
+		opacity: 0.6;
+	}
+}
+
+// Intro Section
+
+@media only screen and (min-width: 1600px){
+	.intro-section {
+		display: grid;
+		height: 100vh;
+		overflow: hidden;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		align-items: center;
+		justify-items: center;
+	} 
+}
+
+@media only screen and (max-width: 1599px) {
+	.intro-section {
+		display: grid;
+		height: 100vh;
+		grid-template-rows: repeat(2, minmax(0, 1fr));
+		justify-items: center;
+		align-items: center;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.intro-section {
+		display: grid;		
+		justify-items: center;
+		align-items: start;
+	}
+}
+
+
+.css {
+	top: -1rem;
+	right: -2rem;
+}
+
+.js {
+	top: 8rem;
+	right: -5.5rem;
+}
+
+.react {
+	bottom: -1rem;
+	right: -1.5rem;
+}
+
+.next {
+	bottom: -5.5rem;
+	right: 8rem;
+}
+
+.sass {
+	bottom: -2rem;
+	left: -2rem;
+}
+
+.bootstrap {
+	top: 8rem;
+	left: -5.5rem;
+}
+
+.tailwind {
+	top: -1rem;
+	left: -2rem;
+}
+
+.html {
+	top: -5.5rem;
+	left: 8rem;
+}
+
+.circle {
+	font-size: 50px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.container-size {
+		width: 20rem;
+		height: 20rem;
+	}
+	.position {
+		top: -1rem;
+	}
+}
+
+@media only screen and (max-width: 1023.99px) {
+	.circle {
+		font-size: 36px;
+	}
+	.img {
+		height: 280px;
+		width: 280px
+	}
+	.position {
+		top: 3.5rem;
+	}
+	.container-size {
+		width: 15rem;
+		height: 15rem
+	}
+	.css {
+		top: -2.5rem;
+		right: -2rem;
+	}
+	
+	
+	.js {
+		top: 5.5rem;
+		right: -5rem;
+	}
+	
+	.react {
+		bottom: -2rem;
+		right: -2rem;
+	}
+	
+	.next {
+		bottom: -5rem;
+		right: 6rem;
+	}
+	
+	.sass {
+		bottom: -2rem;
+		left: -2rem;
+	}
+	
+	.bootstrap {
+		top: 5.5rem;
+		left: -5rem;
+	}
+	
+	.tailwind {
+		top: -2.5rem;
+		left: -2rem;
+	}
+	
+	.html {
+		top: -5.5rem;
+		left: 6rem;
+	}
+}
+
+@media only screen and (max-height: 800px) {
+         .gap {
+		gap: 15rem;
+	   }
+
+}
+
+@media only screen and (max-height: 750px) and (max-width: 550px) {
+         .position {
+		top: 10rem;
+	   }
+}
+
+// Contact Section
+.form-control {
+	padding: 7px 10px;
+	border-radius: 6px;
+	width: 100%;
+	font-size: 20px;
+}
+
+textarea,input {
+	outline: none;
+}
+
+
+.request-popup .leaflet-popup-content-wrapper {
+	border-radius: 0px;
+}
+
+
+
+
+
+

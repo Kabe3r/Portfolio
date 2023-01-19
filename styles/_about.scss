@@ -1,0 +1,56 @@
+// About Section
+
+.js_svg__js-logo {
+      fill: transparent;
+      animation: js-logo 6s ease infinite alternate;
+
+      .js_svg__js-path {
+            fill: transparent;
+            animation: js-path 4500ms ease-in-out infinite alternate;
+      }
+}
+
+.react_svg__react-logo {
+	fill: transparent;
+	animation: react-logo 6s ease infinite alternate;
+
+	.react_svg__react-path {
+		fill: transparent;
+		animation: react-path 7s ease-in-out infinite alternate;
+	}
+}
+
+.next_svg__next-logo {
+      fill: transparent;
+      animation: next-logo 6s ease infinite alternate;
+      
+      .next_svg__next-path {
+        fill: transparent;
+        animation: next-path 4500ms ease-in-out infinite alternate;
+      }
+}
+
+
+.sass_svg__sass-logo {
+      fill: transparent;
+      animation: sass-logo 4500ms ease infinite alternate;
+}
+
+.js_svg__js-logo, .react_svg__react-logo, .next_svg__next-logo, .sass_svg__sass-logo  {
+      height: 200px;
+      width: 200px;
+}
+
+@media only screen and (max-width: 1280px){
+      .js_svg__js-logo, .react_svg__react-logo, .next_svg__next-logo, .sass_svg__sass-logo  {
+            height: 150px;
+            width: 150px;
+      }
+}
+
+@media only screen and (max-width: 768px) {
+      .js_svg__js-logo, .react_svg__react-logo, .next_svg__next-logo, .sass_svg__sass-logo  {
+            height: 100px;
+            width: 100px;
+      }
+}

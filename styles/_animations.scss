@@ -1,0 +1,202 @@
+// About section
+@keyframes react-logo {
+      0% {
+            stroke-width: 0;
+            stroke-dasharray: 0 100;
+            stroke-dashoffset: 100;
+          }
+          25% {
+            stroke-width: 15;
+            stroke-dasharray: 100 0;
+            stroke-dashoffset: 150;
+          }
+          35% {
+            stroke-width: 15;
+            stroke-dasharray: 150 0;
+            stroke-dashoffset: 150;
+          }
+          
+          50% {
+            stroke-width: 15;
+            stroke-dasharray: 200 0;
+            stroke-dashoffset: 200;
+          }
+          60% {
+            stroke-dasharray: 0 200;
+            stroke-dashoffset: 200;
+          }
+          85% {
+            stroke-width: 0;
+            stroke-dasharray: 350 0;
+            stroke-dashoffset: 350;
+          }
+          100% {
+            stroke-dasharray: 450 0;
+            stroke-dashoffset: 450;
+            stroke-width: 0.3;
+          }
+}
+@keyframes react-path {
+	0% {
+		fill: #61DAFB;
+	}
+	25% {
+		fill: transparent;
+	}
+	60% {
+		fill:#61DAFB;
+	}
+	100% {
+		fill: #61DAFB;
+	}
+}
+
+
+@keyframes js-path {
+      0% {
+      fill: #222;
+    }
+    25% {
+      fill: transparent;
+    }
+    60% {
+       fill: #333;
+    }
+    100% {
+      fill: #252525;
+    }
+  }
+  
+  @keyframes js-logo {
+    0% {
+      stroke-dasharray: 0 75;
+      stroke-dashoffset: 75;
+      fill: transparent;
+    }
+    25% {
+      stroke-dasharray: 75 0;
+      stroke-dashoffset: 75;
+      fill: transparent;
+    }
+    35% {
+      stroke-dasharray: 100 0;
+      stroke-dashoffset: 100;
+    }
+    
+    50% {
+      stroke-dasharray: 150 0;
+      stroke-dashoffset: 150;
+    }
+    60% {
+     fill: transparent;
+      stroke-dasharray: 0 150;
+      stroke-dashoffset: 150;
+    }
+    85% {
+     
+      stroke-dasharray: 250 0;
+      stroke-dashoffset: 250;
+    }
+    100% {
+      stroke-dasharray: 0 300;
+      stroke-dashoffset: 300;
+      fill: transparent;
+    }
+  }
+  
+    
+    @keyframes next-path {
+        0% {
+        fill: #f4f4f4;
+      }
+      25% {
+        fill: transparent;
+      }
+      60% {
+         fill: #d4d4d4;
+      }
+      100% {
+        fill: #fff;
+      }
+    }
+    
+    @keyframes next-logo {
+      0% {
+        stroke-width: 0;
+        stroke-dasharray: 0 50;
+        stroke-dashoffset: 50;
+      }
+      25% {
+        stroke-width: 15;
+        stroke-dasharray: 50 0;
+        stroke-dashoffset: 50;
+      }
+      35% {
+        stroke-width: 15;
+        stroke-dasharray: 100 0;
+        stroke-dashoffset: 100;
+      }
+      
+      50% {
+        stroke-width: 15;
+        stroke-dasharray: 150 0;
+        stroke-dashoffset: 150;
+      }
+      60% {
+        stroke-dasharray: 0 200;
+        stroke-dashoffset: 200;
+      }
+      85% {
+        stroke-width: 0;
+        stroke-dasharray: 350 0;
+        stroke-dashoffset: 350;
+      }
+      100% {
+        stroke-dasharray: 450 0;
+        stroke-dashoffset: 450;
+        stroke-width: 0.3;
+      }
+}
+
+    
+    @keyframes sass-logo {
+      0% {
+        stroke-width: 0;
+        stroke-dasharray: 0 100;
+        stroke-dashoffset: 100;
+     
+      }
+      25% {
+        stroke-width: 15;
+        stroke-dasharray: 100 0;
+        stroke-dashoffset: 150;
+      }
+      35% {
+        stroke-width: 15;
+        stroke-dasharray: 150 0;
+        stroke-dashoffset: 150;
+      }
+      
+      50% {
+        stroke-width: 15;
+        stroke-dasharray: 200 0;
+        stroke-dashoffset: 200;
+      }
+      
+      60% {
+        stroke-dasharray: 0 200;
+        stroke-dashoffset: 200;
+      }
+      
+      85% {
+        stroke-width: 0;
+        stroke-dasharray: 350 0;
+        stroke-dashoffset: 350;
+      }
+      
+      100% {
+        stroke-dasharray: 250 0;
+        stroke-dashoffset: 250;
+        stroke-width: 0.3;
+      }
+}

@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion';
 import { contactText, contactInputTransition, inputText } from "../utils"
 import Text from '../components/subComponents/AnimatedText';
-import { useState, useEffect, useRef } from 'react';
-import emailjs from '@emailjs/browser';
 import dynamic from 'next/dynamic'
 import Loader from 'react-loaders';
 import { useGlobalContext } from '../AppContext';
@@ -10,10 +8,6 @@ import { useGlobalContext } from '../AppContext';
 const DynamicHeader = dynamic(() => import('../components/Maps'), {
   ssr: false,
 })
-
-// service_9t2st0l
-// template_6q5yvea
-// console.log(process.env.REACT_APP_SERVICE_ID);
 
 const Contact = () => {
   const { form, message, displayMsg, sendEmail } = useGlobalContext();

@@ -36,7 +36,7 @@ export const AppProvider = ({ children }) => {
       const sendEmail = async (e) => {
             e.preventDefault();
             
-            await emailjs.sendForm('service_9t2st0l', 'template_6q5yvea', form.current, 'V_eYOV7oH_hQJP1Ko')
+            await emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, process.env.PUBLIC_KEY)
               .then(() => {
                 setMessage(true);
                 setDisplayMsg('Message Sent Successfully🙂!');

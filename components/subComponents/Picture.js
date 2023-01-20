@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 const Picture = () => {
   const [transition, setTransition] = useState(false);
       const time = useTime();
-      const rotate = useTransform(time, [0, 2000], [0, 360], { clamp: false });
+      const rotate = useTransform(time, [0, 4000], [0, 360], { clamp: false });
       
       
       useEffect(() => {

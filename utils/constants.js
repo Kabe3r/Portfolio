@@ -50,7 +50,7 @@ export const sideIcons = [
       {
             id: 4,
             icon: <FaSkype className='mx-auto' size={20} />,
-            url: '#'
+            url: 'https://join.skype.com/invite/vEMMM0guAhIk'
       }
 ]
 
@@ -158,8 +158,8 @@ export const primaryText = [
       {
             id: 3,
             title: 'Blog Website',
-            content: 'problem upload images only on deployment',
-            visit: '',
+            content: 'problem upload failed on deployment',
+            visit: 'https://blogpost23.netlify.app',
             code: 'https://github.com/Kabe3r/Blog-Post'
       },
       {

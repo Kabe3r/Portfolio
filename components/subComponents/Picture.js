@@ -32,7 +32,7 @@ const Picture = () => {
         )
         })}
       </motion.div>
-        <motion.div variants={imageWrapper} initial='initial' animate='animate'>
+        <motion.div variants={imageWrapper} initial='initial' animate='animate' className='max-sm:relative max-sm:top-32'>
       <Image className='h-82 img relative top-80 sm:absolute position' src={avatar} alt='ayeen' />
         </motion.div>
       </motion.div>

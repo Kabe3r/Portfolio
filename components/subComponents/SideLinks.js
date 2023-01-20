@@ -10,8 +10,8 @@ const SideLinks = ({open, linkVariants, itemVariants }) => {
                   {sideLinks.map(links => {
                         const { id, icon, url, classes } = links;
                         return (
-                              <motion.li key={id} className='lg:h-14 h-12 mx-auto ' variants={itemVariants}>
-                                    <Link href={url} className={`hide-icon ${classes}`}>
+                              <motion.li key={id} className='lg:h-14 h-12 mx-auto' variants={itemVariants}>
+                                    <Link href={url} className={`hide-icon text-2xl sm:text-3xl ${classes}`}>
                                           {icon}
                                     </Link>
                               </motion.li>

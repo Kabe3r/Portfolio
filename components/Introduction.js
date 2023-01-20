@@ -8,7 +8,7 @@ const Introduction = () => {
       return (
       <section>
       <motion.div className='intro-section gap' initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 2}}>
-      <div>
+      <div className='max-sm:mt-20'>
       {introText.map(text => {
         return (
         <Text key={text.id} {...text} />

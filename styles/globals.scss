@@ -43,8 +43,16 @@ body {
 	width: 90px
 }
 
+@media only screen and (min-width: 1024px){
 .loader-inner {
 	transform: translate(40px);
+}
+}
+
+@media only screen and (max-width: 1023.99px){
+.loader-inner {
+	transform: translateY(40px);
+}
 }
 
 .loader-active {
@@ -61,7 +69,8 @@ body {
 
 .hide-icon {
 	position: relative;
-
+	
+	@media only screen and (min-width: 1024px){
 	&:hover {
 		svg {
 			opacity: 0;
@@ -71,7 +80,8 @@ body {
 			opacity: 1;
 		}
 	}
-
+}
+	
 	&:after {
 		content: "";
 		color: #f2c94c;
@@ -81,6 +91,7 @@ body {
 		width: 100%;
 		text-align: center;
 		opacity: 0;
+		font-size: 1rem;
 	}
 }
 
@@ -287,11 +298,6 @@ h1 {
 
 }
 
-@media only screen and (max-height: 750px) and (max-width: 550px) {
-         .position {
-		top: 10rem;
-	   }
-}
 
 // Contact Section
 .form-control {

@@ -6,25 +6,25 @@ import { SiSass, SiTailwindcss, SiBootstrap, SiNextdotjs, SiCodepen } from 'reac
 export const sideLinks = [
       {
             id: 1,
-            icon: <FcHome className='mx-auto' size={35} />,
+            icon: <FcHome className='mx-auto'  />,
             url: '/',
             classes: 'home-icon'
       },
       {
             id: 2,
-            icon: <FcBusinessman className='mx-auto' size={35} />,
+            icon: <FcBusinessman className='mx-auto' />,
             url: '/About',
             classes: 'about-icon'
       },
       {
             id: 3,
-            icon: <FcWorkflow className='mx-auto' size={35} />,
+            icon: <FcWorkflow className='mx-auto' />,
             url: '/Projects',
             classes: 'projects-icon'
       },
       {
             id: 4,
-            icon: <FcContacts className='mx-auto' size={35} />,
+            icon: <FcContacts className='mx-auto' />,
             url: '/Contact',
             classes: 'contact-icon'
       }
@@ -34,22 +34,22 @@ export const sideLinks = [
 export const sideIcons = [
       {
             id: 1,
-            icon: <FaGithub className='mx-auto' size={20} />,
+            icon: <FaGithub className='mx-auto' />,
             url: 'https://github.com/Kabe3r'
       },
       {
             id: 2,
-            icon: <FaLinkedin className='mx-auto' size={20} />,
+            icon: <FaLinkedin className='mx-auto' />,
             url: 'https://www.linkedin.com/in/ahmed69'
       },
       {
             id: 3,
-            icon: <SiCodepen className='mx-auto' size={20} />,
+            icon: <SiCodepen className='mx-auto' />,
             url: 'https://codepen.io/your-work/?cursor=ZD0wJm89MSZwPTEmdj02NTcyNjgxNQ=='
       },
       {
             id: 4,
-            icon: <FaSkype className='mx-auto' size={20} />,
+            icon: <FaSkype className='mx-auto' />,
             url: 'https://join.skype.com/invite/vEMMM0guAhIk'
       }
 ]

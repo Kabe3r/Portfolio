@@ -1,9 +1,12 @@
+import { useGlobalContext } from '../../AppContext';
 import { sideLinks, sideIcons } from '../../utils/constants';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 
 
 const SideLinks = ({open, linkVariants, itemVariants }) => {
+
+      const { motion } = useGlobalContext();
+
       return (
             <>
             <motion.ul className='side-links lg:absolute lg:h-52 lg:top-1/3 w-full h-full max-lg:flex justify-center items-end' variants={linkVariants} animate={open ? "open" : "closed"}>

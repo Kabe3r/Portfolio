@@ -1,9 +1,9 @@
-import { motion } from 'framer-motion';
+import { useGlobalContext } from '../AppContext';
 import { introText } from '../utils/constants';
 import { Text, Picture } from './subComponents';
-import Loader from 'react-loaders';
 
 const Introduction = () => {
+  const { motion, Loader, control, toggleControl } = useGlobalContext();
 
       return (
       <section>
@@ -13,6 +13,8 @@ const Introduction = () => {
         return (
         <Text key={text.id} {...text} />
         )})}
+        
+      <motion.button className={`${control ? 'bg-red-600' : 'bg-green-600'} px-5 py-5 text-white rounded-full max-sm:hidden`} whileTap={{ scale: 0.8 }} onClick={toggleControl}>{control ? 'STOP' : 'PLAY'}</motion.button>
       </div>
         <Picture />
         </motion.div>

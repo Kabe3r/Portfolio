@@ -1,28 +1,17 @@
 import Image from 'next/image'
 import avatar from '../../images/avatar.png'
 import { iconsContainer, iconWrapper, imageWrapper, introIcons } from '../../utils';
-import { motion, useTime, useTransform } from 'framer-motion';
-import { useState, useEffect } from 'react';
+import { useGlobalContext } from '../../AppContext';
 
 const Picture = () => {
-  const [transition, setTransition] = useState(false);
-      const time = useTime();
-      const rotate = useTransform(time, [0, 4000], [0, 360], { clamp: false });
-      
-      
-      useEffect(() => {
-        const timer = setTimeout(() => {
-           setTransition(true);
-         }, 4200);
-        return () => clearTimeout(timer);
-      }, []);
+      const { control, transition, motion, rotate } = useGlobalContext();      
 
       
-      
       return (
+        <>
         <div className='intro-section max-desktop:row-start-1'>
-      <motion.div className='absolute max-desktop:top-32 max-lg:top-1/4 max-sm:top-2/4' whileTap={{ scale: 0.8 }}>
-        <motion.div className='container-size max-sm:hidden' variants={iconsContainer} initial='initial' animate='animate' style={ transition && {rotate} }>
+      <div className='absolute max-desktop:top-32 max-lg:top-1/4 max-sm:top-2/4'>
+        <motion.div className='container-size max-sm:hidden' variants={iconsContainer} initial='initial' animate='animate' style={control && transition ? {rotate} : null }>
         {introIcons.map(intro => {
         const { id, icon, classes } = intro;
         return (
@@ -35,8 +24,9 @@ const Picture = () => {
         <motion.div variants={imageWrapper} initial='initial' animate='animate' className='max-sm:relative max-sm:top-32'>
       <Image className='h-82 img relative top-80 sm:absolute position' src={avatar} alt='ayeen' />
         </motion.div>
-      </motion.div>
       </div>
+      </div>
+        </>
       )
 }
 

@@ -1,10 +1,10 @@
+import { useGlobalContext } from '../AppContext';
 import { Js, React, Next, Sass } from '../assets'
-import { motion } from 'framer-motion';
 import { aboutText, aboutIconAnimate, aboutIconTransition } from '../utils';
 import Text from '../components/subComponents/AnimatedText';
-import Loader from 'react-loaders';
 
 const About = () => {
+  const { motion, Loader } = useGlobalContext();
  
 
   return (

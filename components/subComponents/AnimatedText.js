@@ -1,9 +1,10 @@
-import { motion } from "framer-motion";
+import { useGlobalContext } from "../../AppContext";
 import { splitText, item, container } from '../../utils';
 
 
 
-const AnimatedText = ({text}) => {  
+const AnimatedText = ({text}) => {
+  const { motion } = useGlobalContext();  
 
   const words = splitText(text);
 

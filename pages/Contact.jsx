@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { contactText, contactInputTransition, inputText } from "../utils"
 import Text from '../components/subComponents/AnimatedText';
 import dynamic from 'next/dynamic'
-import Loader from 'react-loaders';
 import { useGlobalContext } from '../AppContext';
 
 const DynamicHeader = dynamic(() => import('../components/Maps'), {
@@ -10,7 +9,7 @@ const DynamicHeader = dynamic(() => import('../components/Maps'), {
 })
 
 const Contact = () => {
-  const { form, message, displayMsg, sendEmail } = useGlobalContext();
+  const { form, message, displayMsg, sendEmail, Loader } = useGlobalContext();
 
      
   return (

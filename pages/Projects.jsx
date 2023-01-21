@@ -1,12 +1,11 @@
 import ProductImage from '../components/subComponents/ProjectImage';
 import { motion, LayoutGroup, AnimatePresence } from 'framer-motion';
 import { useGlobalContext } from '../AppContext';
-import Loader from 'react-loaders';
 import { primaryText } from '../utils';
 import Link from 'next/link';
 
 const Projects = () => {
-      const { productIds, primaryProduct, primaryImage } = useGlobalContext();
+      const { productIds, primaryProduct, primaryImage, Loader } = useGlobalContext();
      
      
       return (

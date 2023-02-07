@@ -13,7 +13,7 @@ const Maps = () => {
     <MapContainer className='h-full w-9/12 lg:w-full' center={[24.860966, 66.990501]} zoom={13}>
     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
     <Marker position={[24.860966, 66.990501]} icon={defaultMarker}>
-      <Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
+      <Popup>Thanos Wants to know your location</Popup>
     </Marker>
   </MapContainer>
   )

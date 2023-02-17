@@ -158,7 +158,7 @@ export const primaryText = [
       {
             id: 3,
             title: 'Blog Website',
-            content: 'problem upload failed on deployment',
+            content: 'Img upload failed on deployment',
             visit: 'https://blogpost23.netlify.app',
             code: 'https://github.com/Kabe3r/Blog-Post'
       },

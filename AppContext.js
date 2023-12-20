@@ -17,7 +17,7 @@ export const AppProvider = ({ children }) => {
       const time = useTime();
       const rotate = useTransform(time, [0, 4000], [0, 360], { clamp: false });
       // Project
-      const [productIds, setProductIds] = useState([2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]);
+      const [productIds, setProductIds] = useState([2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]);
       const [primaryProduct, setPrimaryProduct] = useState(1);
       // Contact
       const [message, setMessage] = useState(false);

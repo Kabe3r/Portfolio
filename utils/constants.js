@@ -150,125 +150,138 @@ export const primaryText = [
       },
       {
             id: 2,
+            title: 'Kokoranch Herbs',
+            content: 'React SASS Stripe Redux',
+            visit: 'https://kokoranch.vercel.app',
+      },
+      },
+      {
+            id: 3,
+            title: 'Vibe Garden',
+            content: 'React SASS',
+            visit: 'https://vibe-garden-web-xi.vercel.app',
+      },
+      {
+            id: 4,
             title: 'MarkDown Editor',
             content: 'React SASS',
             visit: 'https://markdownpreview12.netlify.app',
             code: 'https://github.com/Kabe3r/MarkDown-Preview'
       },
       {
-            id: 3,
+            id: 5,
             title: 'Blog Website',
             content: 'Img upload failed on deployment',
             visit: 'https://blogpost23.netlify.app',
             code: 'https://github.com/Kabe3r/Blog-Post'
       },
       {
-            id: 4,
+            id: 6,
             title: 'Gallery App',
             content: 'React',
             visit: 'https://photosgallery12.netlify.app',
             code: 'https://github.com/Kabe3r/Gallery-App'
       },
       {
-            id: 5,
+            id: 7,
             title: 'Meme Generator',
             content: 'React SASS',
             visit: 'https://memegenerator12.netlify.app',
             code: 'https://github.com/Kabe3r/Meme-Generator'
       },
       {
-            id: 6,
+            id: 8,
             title: 'Car Game',
             content: 'HTML CSS JS',
             visit: 'https://cargame12.netlify.app',
             code: 'https://github.com/Kabe3r/Car-Game'
       },
       {
-            id: 7,
+            id: 9,
             title: 'Shoot Aliens',
             content: 'HTML CSS JS',
             visit: 'https://shootaliens12.netlify.app',
             code: 'https://github.com/Kabe3r/Shoot-Aliens'
       },
       {
-            id: 8,
+            id: 10,
             title: 'MovieDB',
             content: 'React',
             visit: 'https://moviesdb12.netlify.app',
             code: 'https://github.com/Kabe3r/moviesDb'
       },
       {
-            id: 9,
+            id: 11,
             title: 'Get News',
             content: 'React',
             visit: 'https://getnews12.netlify.app/',
             code: 'https://github.com/Kabe3r/Get-News'
       },
       {
-            id: 10,
+            id: 12,
             title: 'Tenzies',
             content: 'React SASS',
             visit: 'https://tenzies12.netlify.app',
             code: 'https://github.com/Kabe3r/Tenizes'
       },
       {
-            id: 11,
+            id: 13,
             title: 'Flappy Bird',
             content: 'HTML CSS JS',
             visit: 'https://flappy-bird124.netlify.app',
             code: 'https://github.com/Kabe3r/Flappy-Bird'
       },
       {
-            id: 12,
+            id: 14,
             title: 'Typing Test',
             content: 'HTML CSS JS',
             visit: 'https://typing12.netlify.app',
             code: 'https://github.com/Kabe3r/Typing-Speed'
       },
       {
-            id: 13,
+            id: 15,
             title: 'Quiz App',
             content: 'React SASS',
             visit: 'https://quizselect12.netlify.app',
             code: 'https://github.com/Kabe3r/Quiz-App'
       },
       {
-            id: 14,
+            id: 16,
             title: 'Card Game',
             content: 'HTML CSS JS',
             visit: 'https://cards12.netlify.app',
             code: 'https://github.com/Kabe3r/Playing-Cards'
       },
       {
-            id: 15,
+            id: 17,
             title: 'Popper',
             content: 'HTML CSS JS',
             visit: 'https://popper12.netlify.app',
             code: 'https://github.com/Kabe3r/Click-the-pop'
       },
       {
-            id: 16,
+            id: 18,
             title: 'Select Word',
             content: 'HTML CSS JS',
             visit: 'https://guessword12.netlify.app',
             code: 'https://github.com/Kabe3r/Guess-the-word'
       },
       {
-            id: 17,
+            id: 19,
             title: 'Heads & Tails',
             content: 'HTML CSS JS',
             visit: 'https://coinapp12.netlify.app',
             code: 'https://github.com/Kabe3r/Coin'
       },
       {
-            id: 18,
+            id: 20,
             title: 'Rock, Scissors & Papers',
             content: 'HTML CSS JS',
             visit: 'https://rpsapp12.netlify.app',
             code: 'https://github.com/Kabe3r/Rock-Paper-Scissors'
       },
       {
-            id: 19,
+            id: 21,
             title: 'Search Git User',
             content: 'React',
             visit: 'https://git-users12.netlify.app',

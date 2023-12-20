@@ -3,6 +3,7 @@ import { contactText, contactInputTransition, inputText } from "../utils"
 import Text from '../components/subComponents/AnimatedText';
 import dynamic from 'next/dynamic'
 import { useGlobalContext } from '../AppContext';
+import Head from 'next/head';
 
 const DynamicHeader = dynamic(() => import('../components/Maps'), {
   ssr: false,
@@ -14,6 +15,12 @@ const Contact = () => {
      
   return (
     <section>
+    <Head>
+      <title>
+        Contact Me
+      </title>
+      <link rel="icon" href="/logo.png" />
+    </Head>
     <motion.div className='h-screen grid lg:grid-cols-2' initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 2}} >
     <div className='grid content-center justify-self-center '>
     <Text text={contactText} />

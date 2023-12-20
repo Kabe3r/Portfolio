@@ -154,11 +154,10 @@ export const primaryText = [
             content: 'React SASS Stripe Redux',
             visit: 'https://kokoranch.vercel.app',
       },
-      },
       {
             id: 3,
             title: 'Vibe Garden',
-            content: 'React SASS',
+            content: 'React SASS Stripe',
             visit: 'https://vibe-garden-web-xi.vercel.app',
       },
       {
@@ -268,20 +267,6 @@ export const primaryText = [
       },
       {
             id: 19,
-            title: 'Heads & Tails',
-            content: 'HTML CSS JS',
-            visit: 'https://coinapp12.netlify.app',
-            code: 'https://github.com/Kabe3r/Coin'
-      },
-      {
-            id: 20,
-            title: 'Rock, Scissors & Papers',
-            content: 'HTML CSS JS',
-            visit: 'https://rpsapp12.netlify.app',
-            code: 'https://github.com/Kabe3r/Rock-Paper-Scissors'
-      },
-      {
-            id: 21,
             title: 'Search Git User',
             content: 'React',
             visit: 'https://git-users12.netlify.app',

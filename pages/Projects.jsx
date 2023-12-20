@@ -3,6 +3,8 @@ import { motion, LayoutGroup, AnimatePresence } from 'framer-motion';
 import { useGlobalContext } from '../AppContext';
 import { primaryText } from '../utils';
 import Link from 'next/link';
+import Head from 'next/head'
+
 
 const Projects = () => {
       const { productIds, primaryProduct, primaryImage, Loader } = useGlobalContext();
@@ -10,6 +12,10 @@ const Projects = () => {
      
       return (
             <section>
+            <Head>
+            <title>My Projects</title>      
+            <link rel="icon" href="/logo.png" />
+            </Head>
             <motion.div className='h-screen grid justify-center items-center justify-items-center overflow-hidden content-center' initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 2}}>
             <LayoutGroup type='crossfade'>
             <main className='md:row-start-1'>
@@ -18,20 +24,20 @@ const Projects = () => {
                   backgroundSize: 'cover',
                   backgroundRepeat: 'no-repeat'}} layoutId={`product-${primaryProduct}`}> 
                         <div className="bg-black h-99 max-lg:h-98 max-sm:h-82 bg-opacity-20  hover:bg-opacity-75 transform duration-300 grid items-center justify-center justify-items-center rounded-2xl text-white">
-                        {primaryText.map(p => {
+                        {primaryText?.map(p => {
                              return (
-                             p.id === primaryProduct ? (
-                              <div key={p.id}>
+                             p?.id === primaryProduct ? (
+                              <div key={p?.id}>
                              <h2 className="text-3xl mb-5 transform -translate-y-40 group-hover:-translate-y-12 duration-300 opacity-0 group-hover:opacity-80">
-                        {p.title}
+                        {p?.title}
                     </h2>
-                    <h3 className='text-2xl transform translate-y-0 -translate-x-32 group-hover:translate-x-0 opacity-0 duration-300 group-hover:opacity-80'>{p.content}</h3> 
+                    <h3 className='text-2xl transform translate-y-0 -translate-x-32 group-hover:translate-x-0 opacity-0 duration-300 group-hover:opacity-80'>{p?.content}</h3> 
                     <div className='transform translate-y-36 group-hover:translate-y-10 opacity-0 duration-300 group-hover:opacity-80 grid grid-cols-2 gap-x-10'>
-                    <Link href={p.visit} target='_blank' className ='bg-yellow-500 hover:bg-yellow-600 hover:text-white px-5 py-3 rounded-full text-black text-center'>
+                    <Link href={p?.visit} target='_blank' className ='bg-yellow-500 hover:bg-yellow-600 hover:text-white px-5 py-3 rounded-full text-black text-center'>
                     Visit
                     </Link>
-                    <Link href={p.code} target='_blank' className ='bg-yellow-500 hover:bg-yellow-600 hover:text-white px-5 py-3 rounded-full text-black text-center'>
-                    Code
+                    <Link href={p?.code || 'restricted'} target='_blank' className ='bg-yellow-500 hover:bg-yellow-600 hover:text-white px-5 py-3 rounded-full text-black text-center'>
+                    {!p.code ? 'Restricted' : 'Code'}
                     </Link>
                     </div> 
                   </div>
